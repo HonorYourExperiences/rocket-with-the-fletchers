@@ -10,7 +10,7 @@
 <body>
 <header class="site-header">
 <div class="container nav">
-<a href="/"><img class="logo-img" src="assets/logo.jpg" alt="Rocket With The Fletchers"/></a>
+<a href="/"><img class="logo-img" src="assets/images_ac1760e0-efa4-43.jpg" alt="Rocket With The Fletchers"/></a>
 <nav class="nav-links">
 <a href="/speaking.html">Speaking</a><a href="/books.html">Books</a><a href="/podcast.html">Podcast</a><a href="/about.html">About</a>
 <a class="nav-cta" href="#book">Book a Talk</a>
@@ -25,24 +25,29 @@
 <section class="page-hero"><div class="container">
 <p class="eyebrow">Speaking</p>
 <h1>Stages, schools, and teams.</h1>
-<p>Keynotes and conversations that connect rocket science to real life.</p>
+<p>Keynotes and conversations that connect rocket science to real life — faith, resilience, partnership, and the courage to build what you imagine.</p>
 </div></section>
 <section class="content-section"><div class="container content-block">
 <h2>What we speak about</h2>
 <div class="card-grid">
-<div class="card"><h3>STEM &amp; possibility</h3><p>Making aerospace accessible.</p></div>
-<div class="card"><h3>Faith under pressure</h3><p>Holding belief and ambition together.</p></div>
-<div class="card"><h3>Marriage &amp; mission</h3><p>Building a life and career as partners.</p></div>
-<div class="card"><h3>Dream it. Build it.</h3><p>From sketch to deep space systems.</p></div>
+<div class="card"><h3>STEM &amp; possibility</h3><p>Making aerospace accessible. Representation, pathways into engineering, and why the next generation belongs in the room.</p></div>
+<div class="card"><h3>Faith under pressure</h3><p>Holding belief and ambition together when the work is hard and the stakes are high.</p></div>
+<div class="card"><h3>Marriage &amp; mission</h3><p>Building a life and career as partners without losing each other — or the dream.</p></div>
+<div class="card"><h3>Dream it. Build it.</h3><p>From an 11-year-old’s sketch of a rocket to working on systems that reach deep space.</p></div>
 </div>
 <h2>Who books us</h2>
-<ul><li>Schools and STEM programs</li><li>Corporate events</li><li>Faith conferences</li><li>Youth mentoring orgs</li></ul>
+<ul>
+<li>Schools, universities, and STEM programs</li>
+<li>Corporate and leadership events</li>
+<li>Faith-based conferences and community gatherings</li>
+<li>Youth mentoring and outreach organizations</li>
+</ul>
 </div></section>
 <section class="content-section" id="book"><div class="container">
 <div class="final-cta-inner" style="margin-bottom:0">
 <p class="eyebrow" style="margin-bottom:.75rem">Booking</p>
 <h2 style="margin-bottom:.6rem">Request a talk</h2>
-<p style="margin-bottom:0">Tell us about your event.</p>
+<p style="margin-bottom:0">Tell us about your event. We’ll follow up with availability and next steps.</p>
 </div>
 <div class="form-card">
 <form id="book-form" action="https://formsubmit.co/ajax/rocketwiththefletchers@gmail.com" method="POST">
@@ -50,15 +55,19 @@
 <input type="hidden" name="_captcha" value="false"/>
 <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off"/>
 <div class="form-row">
-<div class="field"><label>Your name</label><input type="text" name="name" required/></div>
-<div class="field"><label>Email</label><input type="email" name="email" required/></div>
+<div class="field"><label>Your name</label><input type="text" name="name" required placeholder="Full name"/></div>
+<div class="field"><label>Email</label><input type="email" name="email" required placeholder="you@organization.com"/></div>
 </div>
-<div class="field"><label>Organization</label><input type="text" name="organization"/></div>
+<div class="field"><label>Organization</label><input type="text" name="organization" placeholder="School, company, or event"/></div>
 <div class="form-row">
-<div class="field"><label>Event type</label><select name="event_type"><option value="">Select</option><option>School / university</option><option>Corporate</option><option>Faith / community</option><option>Conference</option><option>Other</option></select></div>
-<div class="field"><label>Approx. date</label><input type="text" name="approx_date"/></div>
+<div class="field"><label>Event type</label>
+<select name="event_type"><option value="">Select</option><option>School / university</option><option>Corporate</option><option>Faith / community</option><option>Conference</option><option>Other</option></select>
 </div>
-<div class="field"><label>Message</label><textarea name="message"></textarea></div>
+<div class="field"><label>Approx. date</label><input type="text" name="approx_date" placeholder="Month / year"/></div>
+</div>
+<div class="field"><label>Message <span class="hint">(optional)</span></label>
+<textarea name="message" placeholder="Audience size, theme, virtual or in-person…"></textarea>
+</div>
 <button type="submit" class="submit-btn" id="submit-btn">Send request</button>
 </form>
 <div class="form-success" id="success"><h3>Request received</h3><p>Thank you. We’ll be in touch soon.</p></div>
