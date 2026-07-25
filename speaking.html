@@ -4,14 +4,13 @@
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Speaking | Rocket With The Fletchers</title>
-<meta name="description" content="Book Myron & Tiera Fletcher for keynotes, school visits, and corporate events."/>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:wght@500;600;700&display=swap" rel="stylesheet"/>
 <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
 <header class="site-header">
 <div class="container nav">
-<a href="/" class="logo-text" style="font-family:Fraunces,serif;font-weight:600">Rocket <span style="color:#9aa3b5">With The Fletchers</span></a>
+<a href="/"><img class="logo-img" src="assets/logo.jpg" alt="Rocket With The Fletchers"/></a>
 <nav class="nav-links">
 <a href="/speaking.html">Speaking</a><a href="/books.html">Books</a><a href="/podcast.html">Podcast</a><a href="/about.html">About</a>
 <a class="nav-cta" href="#book">Book a Talk</a>
@@ -26,73 +25,55 @@
 <section class="page-hero"><div class="container">
 <p class="eyebrow">Speaking</p>
 <h1>Stages, schools, and teams.</h1>
-<p>Keynotes and conversations that connect rocket science to real life — faith, resilience, partnership, and the courage to build what you imagine.</p>
+<p>Keynotes and conversations that connect rocket science to real life.</p>
 </div></section>
 <section class="content-section"><div class="container content-block">
 <h2>What we speak about</h2>
-<p>We tailor every engagement, but most talks land in one of these themes:</p>
 <div class="card-grid">
-<div class="card"><h3>STEM & possibility</h3><p>Making aerospace accessible. Representation, pathways into engineering, and why the next generation belongs in the room.</p></div>
-<div class="card"><h3>Faith under pressure</h3><p>Holding belief and ambition together when the work is hard and the stakes are high.</p></div>
-<div class="card"><h3>Marriage & mission</h3><p>Building a life and career as partners without losing each other — or the dream.</p></div>
-<div class="card"><h3>Dream it. Build it.</h3><p>From an 11-year-old’s sketch of a rocket to working on systems that reach deep space.</p></div>
+<div class="card"><h3>STEM &amp; possibility</h3><p>Making aerospace accessible.</p></div>
+<div class="card"><h3>Faith under pressure</h3><p>Holding belief and ambition together.</p></div>
+<div class="card"><h3>Marriage &amp; mission</h3><p>Building a life and career as partners.</p></div>
+<div class="card"><h3>Dream it. Build it.</h3><p>From sketch to deep space systems.</p></div>
 </div>
 <h2>Who books us</h2>
-<ul><li>Schools, universities, and STEM programs</li><li>Corporate and leadership events</li><li>Faith-based conferences and community gatherings</li><li>Youth mentoring and outreach organizations</li></ul>
-<h2>Formats</h2>
-<p>Keynotes, workshops, panels, virtual sessions, and multi-day school or campus visits.</p>
+<ul><li>Schools and STEM programs</li><li>Corporate events</li><li>Faith conferences</li><li>Youth mentoring orgs</li></ul>
 </div></section>
 <section class="content-section" id="book"><div class="container">
 <div class="final-cta-inner" style="margin-bottom:0">
 <p class="eyebrow" style="margin-bottom:.75rem">Booking</p>
 <h2 style="margin-bottom:.6rem">Request a talk</h2>
-<p style="margin-bottom:0">Tell us about your event. We’ll follow up with availability and next steps.</p>
+<p style="margin-bottom:0">Tell us about your event.</p>
 </div>
 <div class="form-card">
 <form id="book-form" action="https://formsubmit.co/ajax/rocketwiththefletchers@gmail.com" method="POST">
 <input type="hidden" name="_subject" value="Speaking request — Rocket With The Fletchers"/>
-<input type="hidden" name="_template" value="table"/>
 <input type="hidden" name="_captcha" value="false"/>
 <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off"/>
 <div class="form-row">
-<div class="field"><label for="name">Your name</label><input type="text" id="name" name="name" required placeholder="Full name"/></div>
-<div class="field"><label for="email">Email</label><input type="email" id="email" name="email" required placeholder="you@organization.com"/></div>
+<div class="field"><label>Your name</label><input type="text" name="name" required/></div>
+<div class="field"><label>Email</label><input type="email" name="email" required/></div>
 </div>
-<div class="field"><label for="org">Organization</label><input type="text" id="org" name="organization" placeholder="School, company, or event"/></div>
+<div class="field"><label>Organization</label><input type="text" name="organization"/></div>
 <div class="form-row">
-<div class="field"><label for="type">Event type</label><select id="type" name="event_type"><option value="">Select</option><option>School / university</option><option>Corporate</option><option>Faith / community</option><option>Conference</option><option>Other</option></select></div>
-<div class="field"><label for="date">Approx. date</label><input type="text" id="date" name="approx_date" placeholder="Month / year"/></div>
+<div class="field"><label>Event type</label><select name="event_type"><option value="">Select</option><option>School / university</option><option>Corporate</option><option>Faith / community</option><option>Conference</option><option>Other</option></select></div>
+<div class="field"><label>Approx. date</label><input type="text" name="approx_date"/></div>
 </div>
-<div class="field"><label for="message">Message <span class="hint">(optional)</span></label><textarea id="message" name="message" placeholder="Audience size, theme, virtual or in-person…"></textarea></div>
+<div class="field"><label>Message</label><textarea name="message"></textarea></div>
 <button type="submit" class="submit-btn" id="submit-btn">Send request</button>
-<p id="form-status" style="display:none;margin-top:1rem;font-size:.9rem;text-align:center"></p>
 </form>
-<div class="form-success" id="success"><h3>Request received</h3><p>Thank you. We’ll be in touch soon at the email you provided.</p></div>
+<div class="form-success" id="success"><h3>Request received</h3><p>Thank you. We’ll be in touch soon.</p></div>
 </div>
 </div></section>
 </main>
 <footer class="site-footer">
 <div class="container footer-inner">
 <div class="footer-brand"><strong>Rocket With The Fletchers</strong><p>Faith · Love · Rockets</p></div>
-<div class="footer-links"><a href="/speaking.html">Speaking</a><a href="/books.html">Books</a><a href="/podcast.html">Podcast</a><a href="/about.html">About</a></div>
 </div>
 <div class="container footer-bottom"><p>© Rocket With The Fletchers</p></div>
 </footer>
 <script>
 document.getElementById('menu-toggle').addEventListener('click',function(){document.getElementById('mobile-nav').classList.toggle('open')});
-(function(){
-var form=document.getElementById('book-form');if(!form)return;
-form.addEventListener('submit',function(e){
-e.preventDefault();
-var btn=document.getElementById('submit-btn');
-var status=document.getElementById('form-status');
-btn.disabled=true;btn.textContent='Sending…';status.style.display='none';
-fetch(form.action,{method:'POST',body:new FormData(form),headers:{'Accept':'application/json'}})
-.then(function(res){if(!res.ok)throw new Error('fail');return res.json()})
-.then(function(){form.style.display='none';document.getElementById('success').style.display='block'})
-.catch(function(){btn.disabled=false;btn.textContent='Send request';status.style.display='block';status.style.color='#f87171';status.textContent='Something went wrong. Please email rocketwiththefletchers@gmail.com directly.';});
-});
-})();
+(function(){var form=document.getElementById('book-form');if(!form)return;form.addEventListener('submit',function(e){e.preventDefault();var btn=document.getElementById('submit-btn');btn.disabled=true;btn.textContent='Sending…';fetch(form.action,{method:'POST',body:new FormData(form),headers:{'Accept':'application/json'}}).then(function(r){if(!r.ok)throw new Error('fail');return r.json()}).then(function(){form.style.display='none';document.getElementById('success').style.display='block'}).catch(function(){btn.disabled=false;btn.textContent='Send request';alert('Please email rocketwiththefletchers@gmail.com')});});})();
 </script>
 </body>
 </html>
